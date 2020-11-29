@@ -1,0 +1,14 @@
+[
+    {
+        "ID": 1,
+        "Label": "Username",
+        "Type": "input",
+        "Value": "cobrahere"
+    },
+    {
+        "ID": 2,
+        "Label": "Password",
+        "Type": "input",
+        "Value": "Nas"
+    }
+]

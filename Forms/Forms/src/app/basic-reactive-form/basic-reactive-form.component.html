@@ -1,0 +1,60 @@
+<form [formGroup]="form">
+    <!-- <div *ngIf="form.errors" class="alert alert-danger">Username or Password is incorrect</div> -->
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input 
+            formControlName="username"
+            id="username" 
+            type="text" 
+            class="form-control"
+            #name
+            (keyup.enter)="addUsernames(name)">
+            <div *ngIf="username.touched && username.invalid" class='alert alert-danger'>Username is Required</div>
+        <br>
+        <div>
+            <ul class="list-group">
+                <li 
+                    *ngFor="let username of Usernames.controls"
+                    class="list-group-item"
+                    (click)="removeEntry(username)">
+                    <div>
+                        
+                        <div>{{ username.value }}</div>
+                        
+                    </div>
+                                       
+                </li>
+            </ul>
+            <!-- <ul class="list-group">
+                <li 
+                    *ngFor="let post of formdata"
+                    class="list-group-item"
+                    (click)="removeEntry(post)">
+                    <div>
+                        <div>
+                            <button 
+                                (click)="updateUsername(post)"    
+                                class="btn btn-primary btn-small"> Update </button>
+                        </div>
+                        <div>{{ post.id }}</div>
+                           
+                    </div>
+                                       
+                </li>
+            </ul> -->
+        </div>
+    </div>
+    
+    
+    
+    <!-- <div class="form-group">
+        <label for="password">Password</label>
+        <input
+            formControlName="password" 
+            id="password" 
+            type="text" 
+            class="form-control">
+    </div> -->
+    
+</form>
+<button class="btn btn-primary" (click)="deleteAll()">Delete All</button>
