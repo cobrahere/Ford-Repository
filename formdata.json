@@ -1,14 +1,16 @@
-[
-    {
-        "ID": "Username",
-        "Label": "Username",
-        "Type": "input",
-        "Value": ""
-    },
-    {
-        "ID": "Password",
-        "Label": "Password",
-        "Type": "input",
-        "Value": ""
-    }
-]
+{
+    "data": [
+        {
+            "id": "1",
+            "Label": "Username",
+            "Type": "input",
+            "Value": "cobrahere"
+        },
+        {
+            "ID": "Password",
+            "Label": "Password",
+            "Type": "input",
+            "Value": ""
+        }
+    ]
+}
