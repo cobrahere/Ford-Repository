@@ -1,0 +1,37 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <div>
+            <h1>Registration Form</h1>
+        </div>
+
+        <section>
+            <div class="cl-md-12">{{ registrationForm.value | json }}</div>
+            <form id="form" [formGroup]="registrationForm">
+                <div class="row form">
+
+                    <div class="col-md-12" *ngFor="let control of formArray">
+
+                        <div class="col-md-2">
+                            <label>{{ control.Label }}</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" [formControlName]="control.ID" class="form-control">
+                        </div>
+                        
+
+                    </div>
+                    
+                </div>
+                <br>
+                <div> 
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </section>
+
+
+    </body>
+</html>

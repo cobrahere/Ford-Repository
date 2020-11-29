@@ -1,0 +1,14 @@
+[
+    {
+        "ID": "FirstName",
+        "Label": "First Name",
+        "Type": "input",
+        "Value": ""
+    },
+    {
+        "ID": "LastName",
+        "Label": "Last Name",
+        "Type": "input",
+        "Value": ""
+    }
+]
