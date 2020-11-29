@@ -1,0 +1,14 @@
+[
+    {
+        "ID": "Username",
+        "Label": "Username",
+        "Type": "input",
+        "Value": ""
+    },
+    {
+        "ID": "Password",
+        "Label": "Password",
+        "Type": "input",
+        "Value": ""
+    }
+]
